@@ -3,7 +3,7 @@ node{
      git 'https://github.com/Shwetakhandelwal028/HibernateDemoApp.git'
   }
    stage('Compile-Package'){
-   def mvnHome =tool name: '', type: 'maven'
+   def mvnHome = tool type: 'maven'
    sh "${mvnHome}/bin/mvn package"
    }
 
